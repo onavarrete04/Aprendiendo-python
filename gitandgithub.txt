@@ -1,0 +1,28 @@
+Git es un sistema de control de versiones, administra las distintas versiones de un programa
+con esto se puede contralar un proyecto a medida que va creciendo, y ver como esta configurado
+para controlar estos cambios se usa el uso de versiones, para eso se recomienda utilizar github
+Git ayuda a tener un listado de lo que se hace, y colaborar con otras personas y desarrolladores
+es conocido como un repositorio de codigo que puede ser cambiado, manteniendo siempre copias y cambios
+tambien permite coordinar multiples programadores, y ayuda a manejar cambios, que por lo general puede
+analizar su eficiencia e ir eligiendo como lo deseas. 
+
+Git puede trabajar con repositorios remotos y locales, a los que deseas, por ahora vamos a ver los conceptos
+
+Basico:
+provee manera de realizar cambios de tu codigo, te permitira ver que te sirve para avanzar en tu codigo,
+
+comandos basicos
+git init : vas a iniciar un proyecto
+git add <file> : pasaras los archivos del working directory al staging area
+git status : estado de tus archivos
+git commit : pasas de staging area a repositorio
+git push : lo subes a un repositorio remoto
+git pull : trae los cambios que han hecho otros desarrolladores
+git clone : hace una copia de los archivos del repositorio remoto
+
+
+
+tipos de directorio
+working directory: trabajaras con tus archivos
+stading area: intentaras subir tus archivos
+repositorio: subis tus archivos
