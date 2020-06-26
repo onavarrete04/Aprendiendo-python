@@ -2,7 +2,7 @@
 # la lista se escribe en [] y separa sus datos por ,
 cuadrados = [1,4,9,16,25]
 print (cuadrados)
-# como vimos, las se puede usar len en la lista
+# como vimos, las se puede usar len en la lista para contar los elementos
 print(len(cuadrados))
 # asi mismo, se pueden llamar datos especificamente
 print(cuadrados[0])
@@ -44,12 +44,43 @@ print(xl)
 # y si le damo type() nos dara que es una lista
 print(type(xl))
 
+# se pueden crear una lista dentro de una lista
 
-#TUPLAS
-#se utilizan especialmente con datos que no cambian, digamos las listas si pueden cambiar, las tuplas no.
-# se representa en () es decir, es inmutable
-a=(22,20,30,25)
-print(type(a))
+sublistas=[1,2,3,4,['a','b','c']]
+
+#con la función list() se puede crear una listas
+
+numer_list= list((2,3,4,5,6,7,8))
+print(numer_list)
+print(type(numer_list))
+#numero= list(1,2), la función list() solo soporta un dato, por eso se presento la tupla para que pudiera conformar la lista, la tupla es 1 dato
+
+# listas con range() introduce numeros enteros y asi se puede crear una lista
+r = list(range(1,11))
+print(r)
+
+print(dir(r))  #dir() muestra las funciones que puedes usar
+
+print(1 in r) # se pregunta si 1 esta en la lista r, in significa "esta en" en este caso
+colores = ["rojo","amarillo","azul"]
+
+#METODOS
+
+colores.append('violeta') #append() agrega elementos pero solo acepta 1 elemento
+colores.extend(('marron','cafe')) # agrega colores de una tupla o lista, pero los agrega como individuales, append no puede hacerlo, tambien solo espera 1 argumento
+print(colores)
+colores.insert(-1, 'verde') # puedes insertar elementos segun su posición
+
+colores.pop()  # elimina el ultimo elementos del index, osea puedes poner un indice colores.pop(1)
+colores.remove('violeta')
+print(colores)
+colores.sort() #sort organiza alfabeticamente lso colores
+colores.sort(reverse=True)  # asi lo hace de manera inversa
+print(colores.index("amarillo"))
+
+colores.clear() # limpia toda la lista, los elimina todos
+
+
 
 
 
