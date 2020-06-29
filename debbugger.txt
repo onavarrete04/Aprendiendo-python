@@ -1,0 +1,24 @@
+Es un depurador que permite correr el programa paso a paso apra encontrar algun error
+cuando indentificamos el error, tenemos la idea en donde podria estar, lo que hacemos es 
+definir el punto (breakpoint) para analizar las variables y seguir paso a paso como se va ejecutando
+
+la biblioteca estandar de python provee un modulo para depurar el codigo llamado pdb
+
+import pdb
+pdb.set_trace()  -> detendra el programa para tomar control de la ejecución del mismo
+
+comandos utiles para utilizar cuando el programa pare
+
+omando Descripción
+h(elp) Muestra la ayuda de todos los comandos que provee pdb.
+s(tep) Ejecuta la línea actual. Si en la línea actual hay una llamada de función se
+mete dentro del código de la función para poder seguir la ejecución de la
+misma.
+n(ext) Continúa la ejecución hasta la próxima línea.
+r(eturn) Continúa la ejecución hasta el return de la función actual.
+c(ont(inue)) Continúa la ejecución hasta le próximo breakpoint. Si no hay otro
+breakpoint. Ejecutará hasta el fin del programa.
+l(ist) Muestra el código del archivo actual.
+p Evalúa la expresión pasada como parámetro, la evalua en el contexto
+actual e imprime su valor.
+q(uit) Sale del depurador. El programa es abortado
