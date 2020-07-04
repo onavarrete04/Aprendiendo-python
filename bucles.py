@@ -23,6 +23,6 @@ while x <=10:
     x=x+1
 # si no se rompe el bucle se ejecutara por siempre
 # esto es conocido como bucle infinito
-# 
+# en este ciclo no se sabe cuantas veces se ejecutaran las sentencias
    
 

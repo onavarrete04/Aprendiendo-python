@@ -1,4 +1,5 @@
-import math 
+import math
+import random 
 #print(pi)  # numero pi
 #print(e)   # numero e
 #print(tau) # Tau equivale a 2*pi

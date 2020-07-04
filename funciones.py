@@ -144,6 +144,10 @@ print(loro(**d))  # **d significa darle predominancia a esta info y se lee como 
 # Lambda es una función que retorna la suma de sus dos argumentos, puede ser usada cuando es requerido un objeto de tipo funcion.
 # Son funciones anonimas o sin nombre o lambda, estan sintacticamente restringidas a una expresion
 
+agregar = lambda numero1, numero2: numero1 + numero2 # los : refieren un return en esta expresión
+
+print(500,500)
+
 def hacer_incrementador(n):
     return lambda x: x + n  # dice que x va a hacer 42 + el n que le sumes
 
@@ -226,3 +230,25 @@ for x in range(1,10,2): # le dices, iniciamos en 1 , terminas en 10, y va a ser 
     print(x)
 for x in range(10,0,-1): # comienzas en 10, terminas en 0, y vas a ir en -1
     print(x)
+
+# Permiten reutilizar codigo durante el programa, todas tienen entradas y devuelven algo
+
+def hello(): 
+    print('hello world')
+
+    # solo se utilizan cuando se llama
+
+hello()
+
+# las funciones reciben parametros
+
+def hello(name):
+    print("hola "+name)
+
+hello('oscar')
+# cuando le dices que recibiras un parametro y no le das nada, te da error
+
+def hello(name="persona"): # eso es un parametro por defecto
+    print("hola "+name)
+
+hello('oscar')
