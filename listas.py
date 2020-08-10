@@ -81,6 +81,168 @@ print(colores.index("amarillo"))
 colores.clear() # limpia toda la lista, los elimina todos
 
 
+# Lo importante de las listas, es que permiten guardar todo tipo de dato, por eso vamos a hacer ejemplos
+
+a_lista = [3, 7.5, "Hola", 7j + 5, [1,2]]
+
+# se accede por index
+
+a_lista[0]
+a_lista[-2]
+a_lista[-1]
+
+# porciones de la lista
+
+a_lista[1:]
+a_lista[2:3]
+a_lista[:]
+a_lista[2:2]
+
+# LEN
+
+len(a_lista)
+
+# APPEND
+
+a_lista.append(2)
+
+# EXTEND
+
+a_lista.extend([3,4])
+
+# INSERT
+
+a_lista.insert(4, "intercalado") # el numero es el indice
+
+# COUNT
+
+a_lista.count(3)
+
+# REMOVE
+
+a_lista.remove(3)
+
+# COPY
+"""
+a_lista.copy = a_lista.copy()"""
+
+# POP
+
+a_lista.pop()
+
+a_lista.pop(3) # indica indice a quitar a la lista
+
+# CLEAR
+
+a_lista.clear()
+
+# las listas y los string son secuencias ordenadas de elementos, las listas son mutables, los string no
+
+nombre = "oscar"
+
+lista = list(nombre)
+
+# indexado
+
+nombre[0]
+lista[0]
+
+nombre[:4]
+lista[:4]
+
+len(nombre)
+len(lista)
+
+"A" in nombre
+"A" in lista
+
+"x" not in nombre
+"x" not in lista
 
 
+for letra in nombre:
+    print(letra)
 
+lista[2] = "o"
+# no se puede cambiar un estrin
+
+"hola " + nombre
+
+# listas como pilas
+
+stack = [1,2,3]
+
+# ingresar elemento
+
+stack.append(4)
+stack.append(5)
+
+# saco elementos
+
+stack.pop()
+stack.pop()
+stack.pop()
+
+# Listas como Colas
+from collections import deque
+
+cola = [1,2,3]
+
+cola.append(4)
+cola.append(5)
+
+cola.pop()
+cola.pop()
+
+
+# a diferencia de las listas como pilas, las listas como colas presentan menos eficiencia, por eso
+# se utiliza libreria
+
+# colas implementadas correctamente desde libreria
+
+cola = deque([1,2,3])
+
+# para eso utilizaremos la funcion popleft para zacar los elementos de la cola
+cola.append(4)
+cola.append(5)
+cola.popleft()
+cola.popleft()
+
+# LISTAS POR COMPRENSION
+
+cuadrados = []
+
+for x in range(10):
+    cuadrados.append(x**2)
+
+# listas por comprension ejemplos
+cuadros_2 = (x ** 2 for x in range(10))
+
+# utilizando funcion map
+cuadrados_3 = list(map(lambda x: x**2, range(10)))
+
+# map devuelve un generador
+
+a_list = [-4,-2,0,1,2,4]
+
+# lista con positivos
+
+positivos = [x for x in a_list if x>=0]
+
+positivo_2 = list(filter(lambda x: x>0, a_list))
+
+# pares numero y su cuadrado
+
+([x,x**2] for x in range(10))
+
+# lista pares combinando
+
+pares = [(x,y) for x in [1,2,3] for y in [3,1,4] if x !=y]
+
+# pares seria igual a 
+
+pares_2 = []
+for x in [1,2,3]:
+    for y in [3,1,4]:
+        if x != y :
+            pares_2.append((x,y))

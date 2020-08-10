@@ -22,3 +22,4 @@
 # este tiene varios subcomandos -search-install-uninstall-freeze,etc 
 
 # -> pip install novas  o  con un requerimiento especifico pip install requests==2.6.0
+
