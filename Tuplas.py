@@ -8,7 +8,7 @@ print(type(a))
 
 x = (1,2,3,4)
 print(x)
-semana("lunes","martes","miercoles","jueves","viernes","sabado","domingo")
+semana=("lunes","martes","miercoles","jueves","viernes","sabado","domingo")
 
 #función tuple() crea tuplas
 
@@ -27,6 +27,26 @@ print(z[2]) # vemos la posición del index, solo que no se modifica
 #la tupla se puede eliminar con del
 
 del x 
+
+# EMPAQUETADO DE TUPLAS
+
+# consiste en definir unas variable de datos, y luego agruparlas en otra variable
+
+a = 30
+b = "o"
+c = "A"
+
+ejemplo_tupla = a,b,c
+print(ejemplo_tupla)
+
+#DESEMPAQUETANDO TUPLAS
+
+x,y,z = ejemplo_tupla
+
+print(x,y,z)
+
+# como se ve x, y , z imprimen los valores segun el index de la tupla ejemplo
+# si los valores no llegasen a coincidir o fueran dispares, se daria un error.
 
 
 

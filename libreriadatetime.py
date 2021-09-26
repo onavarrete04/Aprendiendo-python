@@ -108,3 +108,18 @@ print(date_time.strftime('%y/%m/%d %H:%M:%S'))
 print(date_time.strftime('%Y/%m/%d %H:%M:%s'))
 
 print('\'Hola \n Mundo!\'')
+
+# Es común que se llame solo el metodo de la libreria que se va a usar, esto porque es
+# más legible el codigo cuando realizamos la llamada de los mismos, 
+
+import random 
+
+a = random.randint(1,10) # En este caso, debemos primero decir que de la libreria random vamos
+                        # a utilizar el metodo randit, y esto puede ser tedioso a la hora de programar
+print(a)
+
+from random import randint 
+
+a = randint(1,10) # aca ya no tenemos que indicar la libreria como prefijo
+
+print(a)

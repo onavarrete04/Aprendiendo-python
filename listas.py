@@ -246,3 +246,70 @@ for x in [1,2,3]:
     for y in [3,1,4]:
         if x != y :
             pares_2.append((x,y))
+
+# Buscar el elemento de una lista
+
+lista = [1,2,3,4,5]
+print(lista.index(4)) # indica en que indice esta?
+print(lista.index(4, 1)) # buscara el 1 desde el numero 4
+
+# metodo de ordenamiento
+
+lista = [ 5,6,1,2,3,4]
+lista.sort()
+print(lista)
+lista.sort(reverse=True)
+print(lista)
+
+lista2 = [(1,9),(1,3),(1,5),(1,4),(1,2)]
+lista2.sort(key= lambda x: x[1])
+print(lista2)
+
+lista = [3,1,2,9,5,4,7,8,6]
+lista.reverse() # invirtio los numeros sin organizarlos
+print(lista)
+
+lista = [3,1,2,9,5,4,7,8,6,0]
+
+sorted(lista)
+print(lista)
+
+sorted(lista, reverse=True)
+print(lista)  
+
+sorted(lista2, reverse = True, key= lambda  x: x[1])
+print(lista2)
+
+# MATRIZ
+
+matriz= [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12],
+]
+
+# acceso a elementos
+
+matriz[0][0] # se accede por indexación, el primer indice es la fila, y el segundo la columna
+matriz[1][2]
+
+# suma de matrices
+
+def suma_matrices(A,B):
+    """
+    Suma dos matrices.
+    Precondiciona: A y B son del mismo tamaño y son matrices de numeros
+    """
+    cant_filas = len(A)
+    cant_col = len(A[0])    
+
+    C = []
+
+    for fila in range(cant_filas):
+        fila_suma = []
+        for col in range(cant_col):
+            fila_suma.append(A[fila][col] + B[fila][col])
+        C.append(fila_suma)
+    return C
+
+print(suma_matrices(matriz,matriz)) # sin embargo la mejor forma de trabajar con matrices es con la libreria numpy
