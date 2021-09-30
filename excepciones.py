@@ -1,6 +1,6 @@
 # Excepciones
 
-# Excepciones son tipos de errores que no son fatales dentro del programa, sin embargo, si setas no son tratadas
+# Excepciones son tipos de errores que no son fatales dentro del programa, sin embargo, si estos no son tratadas
 # dentro de las funciones, al final se extenderan a todo el programa
 
 # las excepciones cambian el flujo de ejecución del programa, debido a que se propaga hacia la función que la llama, no todas las
@@ -195,3 +195,27 @@ def raiz_cuadrada(number):
 class NegativeNumber(Exception):
     "Excepción de tipo numero negativo"
     pass
+
+
+# ENTENDIENDO CONCEPTO DE excepción aplicada a ejemplos practicos.
+
+# Excepciones
+
+# Son un error que ocurre durante la ejecución que esta dado por algo
+# inesperado que no se tenia previsto.
+
+# para tal caso se intenta hacer una captura a la excepción
+
+def dividir(a,b):
+    try:   # se buscará capturar la excepción - significa intentar capturar ese error
+        return a/b
+    except ZeroDivisionError:
+        print("No se puede dividir entre 0")
+        return "Operación Erronea"
+
+ejercicio1 = dividir(5,0)
+
+print("Se ejecuto el programa")
+
+
+# si la excepcion no es la contemplada, sino hay otro error, pues vuelve a caer el programa
