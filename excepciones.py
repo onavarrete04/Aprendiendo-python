@@ -219,3 +219,92 @@ print("Se ejecuto el programa")
 
 
 # si la excepcion no es la contemplada, sino hay otro error, pues vuelve a caer el programa
+
+
+def suma(num1,num2):
+    return num1+num2
+def resta(num1,num2):
+    return num1-num2
+def multiplicar(num1,num2):
+    return num1*num2
+def dividir(num1,num2):
+    try:
+        return num1/num2
+    except ZeroDivisionError:
+        print("No se puede dividir el 0")
+        return "operación fallida"
+while True:
+    
+    try:
+        op1 = (int(input("introduce numero")))
+        op2 = (int(input("introduce numero")))
+        break
+    except ValueError:
+        print("Error, intente nuevamente con un numero entero")
+    
+op3 = str(input("ingrese la opcion que desee: sumar, restar, multiplicar, dividir"))
+
+if op3 == "sumar":
+    print(suma(op1,op2))
+elif op3 == "restar":
+        print(resta(op1,op2))
+elif op3 == "multiplicar":
+    print(multiplicar(op1,op2))
+elif op3 == "dividir":
+    print(dividir(op1,op2))
+
+def divide():
+    try:
+        op1 = float(input("ingrese primer numero"))
+        op2 = float(input("ingrese el segundo numero"))
+    
+        print("La division es: " +str(op1/op2))
+    except ValueError:
+        print("El valor introducido es errorneo")
+    except ZeroDivisionError:
+        print("no se puede dividir por 0")
+    print("calculo finalizado")
+
+divide()
+
+# opcion 2
+
+def divide2():
+    try:
+        op1 = float(input("ingrese primer numero"))
+        op2 = float(input("ingrese el segundo numero"))
+    
+        print("La division es: " +str(op1/op2))
+    except: # captura la excepción pero no es recomendado, porque no se sabe cual es el error. Mala práctica.
+        print("Ha ocurrido un error")
+    
+    print("calculo finalizado") # se imprime siempre al final
+
+divide2()
+
+def divide3():
+    try:
+        op1 = float(input("ingrese primer numero"))
+        op2 = float(input("ingrese el segundo numero"))
+    
+        print("La division es: " +str(op1/op2))
+    except ValueError:
+        print("El valor introducido es errorneo")
+    except ZeroDivisionError:
+        print("no se puede dividir por 0")
+    finally: # siempre se ejecuta este elemento, ocurra o no ocurra un error y es utilizado para que la operación termine
+            # muchas veces cerrando la conexión con las bases de datos, o pudiendo cerrar un archivo abierto.
+        print("calculo finalizado")
+
+divide3()
+
+def divide4():
+    try:
+        op1 = float(input("ingrese primer numero"))
+        op2 = float(input("ingrese el segundo numero"))
+    
+        print("La division es: " +str(op1/op2))
+    finally: # en este caso, como no se capturo el error el programa se detiene, pero alcanza a publicar y ejecutar las lineas presentes
+        print("calculo finalizado") 
+
+divide4()

@@ -114,3 +114,83 @@ fijo1.imposicion()
 # el metodo especifico que se llamo, por ejemplo el metodo __init__
 # El metodo super() no sirve en ocasiones cuando la herencia es multiple, por lo que debera
 # definirse las clases que se llaman, junto con los  parametros que se llaman
+
+
+
+class Coche():
+    def _init_(self):
+        self.__largoChasis = 250
+        self.__anchoChasis = 120
+        self.__ruedas = 4
+        self.__enmarcha = False
+        
+    def arrancar(self,arrancamos):
+        self.__enmarcha = arrancamos
+        if (self.__enmarcha):
+            chequeo = self.__chequeo_interno()
+        if (self.__enmarcha and chequeo):
+            return "El coche esta en marcha"
+        elif (self.__enmarcha and chequeo == False):
+            return "Algo ha ido mal en el chequeo, no podemos arrancar!!"
+        
+        else:
+            return "El coche esta parado"
+    def estado(self):
+        print("el coche tiene",self._ruedas," un ancho",self._anchoChasis)
+            
+            
+    def __chequeo_interno(self): # con los dos __funtion se encapsula la función, esto sirve para que no pueda accederse por fuera.
+        print("Realizando el chequeo interno")
+        self.gasolina = "ok"
+        self.aceite = "ok"
+        self.puertas = "cerradas"
+        
+        if (self.gasolina == "ok" and self.aceite == "ok" and self.puertas == "cerradas"):
+            
+            return True
+        else:
+            return False
+            
+            
+mi = Coche()
+print(mi.arrancar(True))
+mi.estado()
+
+# el encapsulamiento debe hacerse cuando el programador piense que es necesario encapsular el metodo o la variable dentro del programa.
+# no hay una regla fija, y el saberlo usar se adquiere con la experiencia.
+
+# Reforzando la Herencia.
+
+# para mirar la herencia, debemos ver que atributos y metodos o acciones hay en comun entre los objetos
+
+class Vehiculos:
+    
+    def _init_(self,marca,modelo):
+        
+        self.marca = marca
+        self.modelo = modelo
+        self.enmarcha = False
+        self.acelerar = False
+        self.frena = False
+    
+    def arrancar(self):
+        
+        self.enmarcha = True
+        
+    def acelerar(self):
+        
+        self.acelera = True
+        
+    def frenar(self):
+        
+        self.frena = True
+        
+    def estado(self):
+        print("Marca; ",self.marca," \nModelo: ",self.modelo,"\nEnmarcha: ",self.enmarcha,"\nAcelerar: ",self.acelerar," \nFrena: ",self.frena)
+
+        
+class Moto(Vehiculos):
+    pass
+
+miMoto = Moto("Yamaha","2020")
+miMoto.estado()
