@@ -1,6 +1,7 @@
 
 from tkinter import *
 
+# ----------- pack & grid ---------------
 
 root = Tk()
 
@@ -18,3 +19,8 @@ root.mainloop()
 # fija del elemento, en una columna en especifico o un lugar en forma de cuadrilla. ideal para diseños estructurados
 
 # para el widgets PACK sirve para diseños complejos y faciles, especialmente cuando se trabaja en una sola fila o columna
+
+# ------------ Radiobutton --------------
+
+#  muestra un conjunto de botones y permite seleccionar solo uno de ellos. Se los debe agrupar para que actuen
+# en conjunto
