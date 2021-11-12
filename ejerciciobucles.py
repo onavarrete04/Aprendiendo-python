@@ -60,7 +60,7 @@ for x in range(numero):
         print(i,end="")   
     print("")
 
-a = 
+a = 0
 contraseña = str(input("ingrese su contraseña"))
 
 
