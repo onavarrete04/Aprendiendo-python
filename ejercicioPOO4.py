@@ -146,3 +146,23 @@ contacto1.menu()
 # Conclusión, dentro de una misma clase, se pueden llamar los metodos self.sumar()
 # Generando así menus, o simplificando la forma en la que atraemos la información a otro metodo
 # Esta herramienta es muy util. Recordar que seguimos trabajando con la misma clase.
+
+tupla = ()
+lista = []
+diccionario = {}
+
+def suma(a,b):
+    suma = a + b
+    print(suma)
+class Operaciones:
+
+    def inicializar(self,a,b):
+
+        self.a = a
+        self.b = b
+    def sumar(self):
+
+        suma = self.a + self.b
+        print(suma)
+########################
+suma1 = Operaciones()
