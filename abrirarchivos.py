@@ -71,4 +71,34 @@ leer = archivo_1.read() # hay que crear un objeto que lea el contenido
 print(leer)
 archivo_1.close()
 
+# ABRIR ARCHIVO LEER Y AGREGAR DATOS
 
+archivo_1 = open("datos.txt", "r+")
+contenido = archivo_1.read()
+print(contenido)
+archivo_1.write("Otra otra linea 1 \n")
+archivo_1.write("Otra otra linea 2 \n")
+contenido = archivo_1.read() # no lee otra vez el archivo
+print(".....")
+print(contenido) # no lee lo nuevo del archivo
+archivo_1.close()
+
+# hay que abrir nuevamente el archivo para leer lo nuevo agregado
+
+archivo_1 = open("datos.txt", "r+") # permite agregar y leer el archivo
+contenido = archivo_1.read()
+print(contenido)
+
+
+# CODIFICACIÓN DE CARACTERES UTF-8
+print("-------"*5)
+archivo_1 = open("datos.txt","w", encoding="utf-8") # como se abrio nuevamente el archivo con la w
+# el contenido anterior del archivo se borro en su totalidad
+archivo_1.write("Primera línea. \n")
+archivo_1.write("Segunda línea. \n")
+archivo_1.write("Tercera línea. \n")
+archivo_1.close()
+archivo_1 = open("datos.txt", "r")
+contenido = archivo_1.read()
+print(contenido)
+archivo_1.close()

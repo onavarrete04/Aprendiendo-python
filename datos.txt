@@ -1,6 +1,3 @@
 Primera línea. 
 Segunda línea. 
 Tercera línea. 
-nueva linea 1 ejemplo 
-nueva linea 2 ejemplo 
-nueva linea 3 ejemplo 
