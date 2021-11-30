@@ -22,6 +22,10 @@ class Operacion:
         
 ejercicio1 = Operacion()
 
+objDato1 = Operacion()
+objDato1.dividir()
+objDato1.sumar()
+
 
 class Alumnos:
     
