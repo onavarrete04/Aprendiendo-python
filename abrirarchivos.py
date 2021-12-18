@@ -42,7 +42,7 @@ archivo_1.close()
 
 
 archivo_1 = open("datos.txt","r") # se abre el archivo
-linea_1 = archivo_1.readlines() # la función readlineas crea una lista
+linea_1 = archivo_1.readlines() # la función readlineas crea una lista IMPORTANTISIMO
 
 print("El archivo tiene", len(linea_1), "lineas") # como ya esta creada la lista, con la función len
 # se cuentan los elementos de la lista - especificamente cada linea
