@@ -14,4 +14,5 @@ print("----")
 print(f"{sum(lista):40}")
 
 valor1=10
-print(F"{{valor1}} tiene el valor {valor1}") # doble llaves para que 
+print(F"{{valor1}} tiene el valor {valor1}") # doble llaves para que pase por string
+# F mayuscula pa que sepa que es un string
