@@ -1,0 +1,24 @@
+BASES DE DATOS SQLite
+
+Modelo relacional asegura que cada registro de tabla sea unico, para lo cuál se usa la primary key (identifica de manera unica una fila de una tabla).
+
+Forening key relaciona dos tablas, representa la clave primaria de otra tabla.
+
+Tabla Autor  
+Tabla Libro (AUTOR INTEGER FOREING KEY ID)
+
+SQL -> Lenguaje de estructura diseñada
+
+CREATE TABLE nombre_tabla (
+	columna uno tipo de dato,
+);
+
+Modificar
+
+ALTER TABLE nombre_tabla
+ADD columna_nombre tipo dato. (puede ser foreing key)
+
+BORRAR 
+
+DROP COLUMNA
+
