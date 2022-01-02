@@ -22,3 +22,39 @@ BORRAR
 
 DROP COLUMNA
 
+CONSULTAR
+
+SELECT * FROM nombre tabla; * todos los elementos de una tabla
+
+SELEC DISTINC devuelve valores diferentes
+
+WHERE filtra registros con condiciones especificadas
+puede usar and y or y not
+
+order by -> ordena registros de forma ascendente ASC|DESC
+
+LIMIT -> limita registros que queremos ver
+
+insertar datos en una tabla
+
+primera forma: 
+INSERT INTO nombre de tablas (columnas) VALUES (valores)
+
+segunda forma:
+INSERT INTO nombre de tabla VALUES(valor_colum1, valor_colum2)
+
+Actualizar datos
+
+
+UPDATE nombre tabla SET columna = "accion" where CODIGO = 2
+
+
+borrar datos
+
+DELETE FROM nombre tabla where codigo = 4
+
+borrar solo registros y no la tabla
+
+DELETE FROM *
+
+
