@@ -24,5 +24,8 @@ while x <=10:
 # si no se rompe el bucle se ejecutara por siempre
 # esto es conocido como bucle infinito
 # en este ciclo no se sabe cuantas veces se ejecutaran las sentencias
-   
 
+a = [(1,2,3),(1,2,3),(1,2,3)]
+a = [1,2,3,4,5,6]
+
+print("la lista tiene",a[0][1])

@@ -1,0 +1,15 @@
+ORM 
+
+OBJECT RELATIONAL MAPPING
+MAPEO OBJETO RELACIONAL
+
+Se puede crear datos o SQL
+
+Un orm será automatico e independiente de la base de datos, 
+tambien permite no escribir comandos SQL sino que
+la orm crea las consultas.
+
+
+
+Las desventajas que si el ORM no hace una buena consulta
+será dificil de optimizarlas,

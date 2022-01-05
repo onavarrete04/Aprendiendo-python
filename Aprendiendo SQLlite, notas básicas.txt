@@ -57,4 +57,13 @@ borrar solo registros y no la tabla
 
 DELETE FROM *
 
+OBTENER DATOS EN VARIAS TABLAS RELACIONADAS
 
+LEF JOIN 
+
+select * From libro L LEFT JOIN categoria_libro C on lL.categoria_id = C.codigo;
+trae todas las tablas
+
+
+select nombre columnas from tabla 1 inner join tabla 2 on table1.colum_name = table2.colum_name
+trae las tablas que coinciden sus valores

@@ -40,3 +40,19 @@ cursor.execute("DELETE FROM book WHERE ID = 2")
 conexion1.commit()
 
 conexion1.close()
+
+
+"""
+Metodos más importantes conexion a ases de datos
+
+conexion -> conecta
+commit -> certifica que los cambios implementados se guarden definitavmente
+rollback -> revierte lo ultimo hecho en comit
+close -> cierra automaticamente la base de datos
+execute -> atajo que crea cursor y envia parametros
+execute many -> crea cursor
+create function -> se crea una función creada por uno mismo
+finalize -> devuelve datos str, int, y otros
+
+
+"""
