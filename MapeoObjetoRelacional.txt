@@ -13,3 +13,32 @@ la orm crea las consultas.
 
 Las desventajas que si el ORM no hace una buena consulta
 será dificil de optimizarlas,
+
+---->
+
+ORM es un técnica de programación para convertir datos entre el sistema de tipos 
+utilizados en un lenguaje de POOB y la utilización de una base de datos RELACIONAL
+como motor de persistencia.
+
+Transformar o mapear información recibida por la base de datos, este mapeo sera automatico e independientea
+de la base de datos, también permite no escribir SQL, ni saber como se hace.
+
+Desventaja - > si el ORM arma una  consulta poco eficiente o esquma no sera sencillo optimizarlo.
+
+Ventajas: simplifican desarrollo sin preocuparnos en como manejar la persistencia de los datos de la base
+Permite persistir nuestros objetos de nuestro programa, desacopla del motor de base datos, dando posibilidad de 
+cambiarlo sin que haga falta modificar el programa
+
+--> sqlarchemy
+
+Presenta un metodo para asociar clases de python con tablas de las bases de datos y las isntancias con las filas correspondientes
+incluye un sistema trasparente para mostrar todos los cambios realizados
+(UNIT OF WORK) sistema para expresar consultas en terminos de lo expresado por el usuario.
+
+ORM comienza por describir las tablas de la base de datos y luego definir propias clases mapeadas a esas clases
+(normalmente estas tareas se hacen juntas en sistemas declarativos)
+
+cuando la clase es construida la base declarativa remplaza todos los objetos de tipos column
+por uno de descriptor (instrumentalización) nos permite persistir, saber los datos cargados contexto sql
+
+fuera del proceso del mapeo, la clase sigue siendo una clase normal de python en donde se hace algo normal

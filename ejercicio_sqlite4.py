@@ -2,6 +2,8 @@
 
 # sqlalchemy -> libreria para ORM
 
+"""DECLARATIVE"""
+
 from sqlalchemy import create_engine, engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Sequence
