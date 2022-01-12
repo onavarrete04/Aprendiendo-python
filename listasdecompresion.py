@@ -1,5 +1,8 @@
 # Listas de compresion
 
+"""La comprension de listas permiten crear listas a partir de otros
+elementos iterables, tuplas, otras listas, otras y facilita que sea de forma conscisa un algoritmo"""
+
 """Son listas que se pueden crear en una misma línea de código"""
 lista = []
 
