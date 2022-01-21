@@ -3,3 +3,33 @@
 # se crea una carpeta con un archivo __init__.py que esta diciendo que se crea un paquete
 # se pueden crear modulos donde se quieran
 
+# Paquetes distribuibles
+
+Para ello hay que instalarlo y distribuirlo para llamarlo independientemente
+de donde uno se encuentre, para ello se instala en el sistema operativo.
+
+se crea un archivo setup.py en la raiz de la carpeta python
+
+setup.py
+"""
+from setuptools import setup
+
+setup(
+    name="paquete_calculos",
+    version = "1.0", # la versión es por si se va ir actualizando
+    description = "Paquete de redondeo y potencia",
+    author = "Oscar Navarrete",
+    author_email = "onavarrete@unicolmayor.edu.co"
+    packages=["paquete_calculos","basicos.operaciones_basicas"] # rutas y subpaquetes y donde se encuentran teniendo en cuenta que esta desde raiz
+)
+
+
+# Luego en se dirige uno a la consola desde la carpeta
+
+cd Documentos/Aprendiendo_python/
+
+python setup.py sdist #-> sdist es lo que convertira el paquete en un distribuible
+
+
+
+"""

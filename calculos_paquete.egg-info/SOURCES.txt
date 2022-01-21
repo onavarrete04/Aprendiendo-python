@@ -1,0 +1,11 @@
+README.md
+setup.py
+calculos_paquete/__init__.py
+calculos_paquete/calculos_generales.py
+calculos_paquete/redondeo_y_potencia.py
+calculos_paquete.egg-info/PKG-INFO
+calculos_paquete.egg-info/SOURCES.txt
+calculos_paquete.egg-info/dependency_links.txt
+calculos_paquete.egg-info/top_level.txt
+calculos_paquete/basicos/__init__.py
+calculos_paquete/basicos/operaciones_basicas.py
