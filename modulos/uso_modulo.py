@@ -21,3 +21,7 @@ restar(2,1)
 from curriculum import name
 
 print(name())
+
+# Los modulos sirven para utilizar y reutilizar código, es modularización y reutilización
+
+
