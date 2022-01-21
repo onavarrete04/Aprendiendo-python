@@ -101,9 +101,28 @@ conjunto1>=conjunto2 (si el conjunto1 es un superconjunto o es igual que conjunt
 dias_semana={"lunes", "martes", "miércoles","jueves","viernes","sábado","domingo"}
 dias_feriados={"sábado","domingo"}
 dias_laborables={"lunes", "martes", "miércoles","jueves","viernes"}
-if dias_feriados<dias_semana:
+if dias_feriados<dias_semana: # significa que es un subconjunto
     print("dias_feriados es un subconjunto de dias_semana")
 if dias_feriados!=dias_laborables:
-    print("dias_feriados es distinto a dias_laborables")    
-if dias_semana>dias_laborables:
+    print("dias_feriados es distinto a dias_laborables")  # muestra que no hay intersección de elementos  
+if dias_semana>dias_laborables: # subconjunto
+
     print("dias_semana es un superconjunto de dias_laborables")
+
+# frozenset 
+
+# frozenset es un metodo que hace que sean inmutables los conjuntos
+
+opciones_salir = frozenset(["SI","si"])
+suma = 0
+
+while True:
+    valor = int(input("NUMBER"))
+    suma +=  valor
+    pregunta = input("¿Desea salir? [Si/No]")
+
+    if pregunta in opciones_salir:
+        break
+print("La suma es ",suma)
+
+
